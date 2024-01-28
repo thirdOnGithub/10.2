@@ -43,7 +43,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     
+    var calculationsListVC = CalculationsListViewController()
     var calculationHistory: [CalculationHistoryItem] = []
+    var currentResult = "NoData"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,6 +118,7 @@ class ViewController: UIViewController {
             let result = try calculate()
             
             resultLabel.text = numberFormatter.string(from: NSNumber(value: result))
+            currentResult = numberFormatter.string(from: NSNumber(value: result))!
         } catch {
             resultLabel.text = "🧮 Ошибка 🧮"
         }
@@ -127,9 +130,8 @@ class ViewController: UIViewController {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let calculationsListVC = sb.instantiateViewController(identifier: "CalculationsListViewController")
         if let vc = calculationsListVC as? CalculationsListViewController {
-            vc.result = resultLabel.text
+            vc.result = currentResult
         }
-        
         navigationController?.pushViewController(calculationsListVC, animated: true)
     }
     

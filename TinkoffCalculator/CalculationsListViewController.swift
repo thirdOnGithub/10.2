@@ -9,7 +9,7 @@ import UIKit
 
 class CalculationsListViewController: UIViewController {
     
-    var result: String?
+    var result: String = ""
     @IBOutlet weak var calculationLabel: UILabel!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {

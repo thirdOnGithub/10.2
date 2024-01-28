@@ -103,12 +103,12 @@
 			children = (
 				9ED4007F2B62EFAC0016EC01 /* AppDelegate.swift */,
 				9ED400812B62EFAC0016EC01 /* SceneDelegate.swift */,
+				9E0841492B64E1F4006E5DF5 /* CalculationsListViewController.swift */,
 				9ED400832B62EFAC0016EC01 /* ViewController.swift */,
 				9ED400852B62EFAC0016EC01 /* Main.storyboard */,
 				9ED400882B62EFAD0016EC01 /* Assets.xcassets */,
 				9ED4008A2B62EFAD0016EC01 /* LaunchScreen.storyboard */,
 				9ED4008D2B62EFAD0016EC01 /* Info.plist */,
-				9E0841492B64E1F4006E5DF5 /* CalculationsListViewController.swift */,
 			);
 			path = TinkoffCalculator;
 			sourceTree = "<group>";
