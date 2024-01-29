@@ -121,6 +121,7 @@ class ViewController: UIViewController {
             currentResult = numberFormatter.string(from: NSNumber(value: result))!
         } catch {
             resultLabel.text = "🧮 Ошибка 🧮"
+            currentResult = resultLabel.text!
         }
         
         calculationHistory.removeAll()
