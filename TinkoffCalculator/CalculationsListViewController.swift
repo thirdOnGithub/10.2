@@ -29,9 +29,4 @@ class CalculationsListViewController: UIViewController {
     override func viewDidLoad() {
         calculationLabel.text = result
     }
-    
-    @IBAction func dismissVC(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-    
 }
